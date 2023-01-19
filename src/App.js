@@ -1,23 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import TypeAheadDropDown from './TypeAheadDropDown';
+import cities from './cities';
+import DropDownFunc from './DropDownFunc';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <TypeAheadDropDown iteams={cities} />
+     <div style={{height:"20px"}}></div>
+     <DropDownFunc iteams={cities} />
     </div>
   );
 }
